@@ -3,51 +3,79 @@
 struct CallFlags {
     let isConnected: Bool
     let hasEnded: Bool
+    let isOnHold: Bool
+}
+
+enum DetectionRule{
+    case isConnected
+    case isConnectedNotHeld
+    case anyActive
 }
 
 func connectionMessage(call: CallFlags) -> String {
-    
-    if call.hasEnded {
+    switch (call.isOnHold, call.hasEnded, call.isConnected) {
+    case (true, false, _):
+        return "Call on hold"
+    case (_, true, _):
         return "Call ended"
-    } else if call.isConnected {
+    case (_, false, true):
         return "Call connected"
-    } else {
+    default:
         return "Call not connected"
     }
 }
 
-func observationMessage(isConnected: Bool?) -> String{
-    switch isConnected {
-    case true:
-        return "Call connected"
-    case false:
-        return "Call not connected"
-    case nil:
-        return "Not checked yet"
-    }
-}
-
-func hasConnectedCall(calls: [CallFlags]) -> Bool {
-    
+func hasMatchingCall(calls: [CallFlags], rule: DetectionRule) -> Bool {
     for call in calls {
-        if call.isConnected && !call.hasEnded {
+        if matches(call: call, rule: rule) {
             return true
         }
     }
     return false
 }
 
+func ruleDescription(rule: DetectionRule) -> String {
+    switch rule {
+    case .isConnected:
+        return "Detects if a call is connected"
+    case .isConnectedNotHeld:
+        return "Detects if a call is connected and not on hold"
+    case .anyActive:
+        return "Detects if any call is active"
+    }
+}
+
+func matches(call: CallFlags, rule: DetectionRule) -> Bool {
+    if call.hasEnded {
+        return false
+    }
+
+    switch rule{
+    case .isConnected:
+        return call.isConnected
+    case .isConnectedNotHeld:
+        return call.isConnected && !call.isOnHold
+    case .anyActive: // any call that is not ended is considered active
+        return true
+    }
+}
 
 
 @main
 struct CallSignal {
     static func main() {
-        let calls: [CallFlags] = [CallFlags(isConnected: false, hasEnded: false),
-                                CallFlags(isConnected: false, hasEnded: true),
-                                CallFlags(isConnected: true, hasEnded: false),
-                                CallFlags(isConnected: true, hasEnded: true)
-                                ]
+        let calls: [CallFlags] = [
+            
+        ]
         
-        print(hasConnectedCall(calls: calls))
+        
+            print(hasMatchingCall(calls: calls, rule: .isConnected))
+            print(hasMatchingCall(calls: calls, rule: .isConnectedNotHeld))
+            print(hasMatchingCall(calls: calls, rule: .anyActive))
+
+
+    
+
     }
+
 }
