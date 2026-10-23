@@ -30,6 +30,6 @@ struct CallFlags {
 @main
 struct CallSignal {
     static func main() {
-        print(connectionMessage(call: CallFlags(isConnected: false, hasEnded: false)))
+        print(connectionMessage(call: CallFlags(isConnected: true, hasEnded: true)))
     }
 }
