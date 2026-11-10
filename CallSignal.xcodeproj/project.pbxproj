@@ -1,0 +1,53 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+		87247C95C53767391707C3E2 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/CallSignalApp.swift"; sourceTree = "<group>"; };
+		332E012939A0763FE3E88504 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/Intents/CallIntents.swift"; sourceTree = "<group>"; };
+		ED8B919CF147496A1D4AB698 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/Services/CallMonitor.swift"; sourceTree = "<group>"; };
+		600E3998B5B6CA24F3C39307 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/Services/CallReader.swift"; sourceTree = "<group>"; };
+		6CC10ACB9D7738458B0F51AC = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/Services/NotificationService.swift"; sourceTree = "<group>"; };
+		2D55888969A9D8D81AE49D34 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/Views/ActivityView.swift"; sourceTree = "<group>"; };
+		0D43B5B48A5FC07E7FC7E0FE = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/Views/Components.swift"; sourceTree = "<group>"; };
+		F261F1ADECF35C3F6D2A1FBD = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/Views/SettingsView.swift"; sourceTree = "<group>"; };
+		A516B05535353C8945641B59 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App/Views/StatusView.swift"; sourceTree = "<group>"; };
+		4F339C727385BBA2DD58D4B0 = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/CallSignalCore/CallSnapshot.swift"; sourceTree = "<group>"; };
+		E58872550AA27EF1BEEEF56A = { isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sources/CallSignalCore/DetectionSession.swift"; sourceTree = "<group>"; };
+		4AD441DFB1033D3B6CA64FBE = { isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "App/Assets.xcassets"; sourceTree = "<group>"; };
+		190B156325615D3BEE8D253F = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "App/PrivacyInfo.xcprivacy"; sourceTree = "<group>"; };
+		E72685212AF966A85FF3F9E9 = { isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "App/Info.plist"; sourceTree = "<group>"; };
+		42C59AF8A4BAE559BC5A5D5D = { isa = PBXFileReference; lastKnownFileType = text; path = "README.md"; sourceTree = "<group>"; };
+		BD84DAF23E7F5FEBD0301663 = { isa = PBXFileReference; lastKnownFileType = text; path = "LICENSE"; sourceTree = "<group>"; };
+		EAA45A7DCA76E4457B46EEF6 = { isa = PBXBuildFile; fileRef = 87247C95C53767391707C3E2; };
+		A3CB3DD15268C1D594E151FB = { isa = PBXBuildFile; fileRef = 332E012939A0763FE3E88504; };
+		0A36CE0CE61686869771DC97 = { isa = PBXBuildFile; fileRef = ED8B919CF147496A1D4AB698; };
+		FC5852876F0565472BDD312F = { isa = PBXBuildFile; fileRef = 600E3998B5B6CA24F3C39307; };
+		CC449502B9F96461447CF5ED = { isa = PBXBuildFile; fileRef = 6CC10ACB9D7738458B0F51AC; };
+		A4C4DB3FC1074E77B82250D4 = { isa = PBXBuildFile; fileRef = 2D55888969A9D8D81AE49D34; };
+		8D515D6FA835D5025D338313 = { isa = PBXBuildFile; fileRef = 0D43B5B48A5FC07E7FC7E0FE; };
+		76EBA2BFBD21C06729A26057 = { isa = PBXBuildFile; fileRef = F261F1ADECF35C3F6D2A1FBD; };
+		28C12745B7D671E73F078726 = { isa = PBXBuildFile; fileRef = A516B05535353C8945641B59; };
+		9920C4701A2D252E30FE6381 = { isa = PBXBuildFile; fileRef = 4F339C727385BBA2DD58D4B0; };
+		F1EC6B88C623F9D99E0B3098 = { isa = PBXBuildFile; fileRef = E58872550AA27EF1BEEEF56A; };
+		B9A73E7D7AC845889F7D3870 = { isa = PBXBuildFile; fileRef = 4AD441DFB1033D3B6CA64FBE; };
+		D3C2358BFDB254816ED9D71E = { isa = PBXBuildFile; fileRef = 190B156325615D3BEE8D253F; };
+		A8792157CB4F27FB949C035F = { isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallSignal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC233BDA2344D97687F5A251 = { isa = PBXGroup; name = App; children = (87247C95C53767391707C3E2, 332E012939A0763FE3E88504, ED8B919CF147496A1D4AB698, 600E3998B5B6CA24F3C39307, 6CC10ACB9D7738458B0F51AC, 2D55888969A9D8D81AE49D34, 0D43B5B48A5FC07E7FC7E0FE, F261F1ADECF35C3F6D2A1FBD, A516B05535353C8945641B59, 4F339C727385BBA2DD58D4B0, E58872550AA27EF1BEEEF56A, 4AD441DFB1033D3B6CA64FBE, 190B156325615D3BEE8D253F, E72685212AF966A85FF3F9E9, 42C59AF8A4BAE559BC5A5D5D, BD84DAF23E7F5FEBD0301663); sourceTree = "<group>"; };
+		0A3E27B8CA818264D75C8D81 = { isa = PBXGroup; name = Products; children = (A8792157CB4F27FB949C035F); sourceTree = "<group>"; };
+		19F479106CE8C3BA8C106518 = { isa = PBXGroup; children = (FC233BDA2344D97687F5A251, 0A3E27B8CA818264D75C8D81); sourceTree = "<group>"; };
+		878A52FC5FF6A57D50B7B870 = { isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (EAA45A7DCA76E4457B46EEF6, A3CB3DD15268C1D594E151FB, 0A36CE0CE61686869771DC97, FC5852876F0565472BDD312F, CC449502B9F96461447CF5ED, A4C4DB3FC1074E77B82250D4, 8D515D6FA835D5025D338313, 76EBA2BFBD21C06729A26057, 28C12745B7D671E73F078726, 9920C4701A2D252E30FE6381, F1EC6B88C623F9D99E0B3098); runOnlyForDeploymentPostprocessing = 0; };
+		41D311A605520FC7B8B9A980 = { isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (B9A73E7D7AC845889F7D3870, D3C2358BFDB254816ED9D71E); runOnlyForDeploymentPostprocessing = 0; };
+		E2AA269EB967A8853A258BFA = { isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		34A04005BCAF206EEC990BD9 = { isa = PBXNativeTarget; buildConfigurationList = 82A58AF6F77EDCFC78A65DA6; buildPhases = (878A52FC5FF6A57D50B7B870, E2AA269EB967A8853A258BFA, 41D311A605520FC7B8B9A980); buildRules = (); dependencies = (); name = CallSignal; productName = CallSignal; productReference = A8792157CB4F27FB949C035F; productType = "com.apple.product-type.application"; };
+		488864B3D19480A82F7F1786 = { isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = "YES"; CLANG_ENABLE_OBJC_ARC = "YES"; IPHONEOS_DEPLOYMENT_TARGET = "17.0"; SDKROOT = "iphoneos"; SWIFT_VERSION = "5.0"; SWIFT_STRICT_CONCURRENCY = "targeted"; GCC_C_LANGUAGE_STANDARD = "gnu17"; ENABLE_USER_SCRIPT_SANDBOXING = "YES"; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; DEBUG_INFORMATION_FORMAT = "dwarf"; ENABLE_TESTABILITY = "YES"; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG"; ONLY_ACTIVE_ARCH = "YES"; }; name = Debug; };
+		35B1014F135DE9B45529B733 = { isa = XCBuildConfiguration; buildSettings = { CLANG_ENABLE_MODULES = "YES"; CLANG_ENABLE_OBJC_ARC = "YES"; IPHONEOS_DEPLOYMENT_TARGET = "17.0"; SDKROOT = "iphoneos"; SWIFT_VERSION = "5.0"; SWIFT_STRICT_CONCURRENCY = "targeted"; GCC_C_LANGUAGE_STANDARD = "gnu17"; ENABLE_USER_SCRIPT_SANDBOXING = "YES"; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_COMPILATION_MODE = "wholemodule"; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; }; name = Release; };
+		7ED5184A5487DF185E3420D0 = { isa = XCConfigurationList; buildConfigurations = (488864B3D19480A82F7F1786, 35B1014F135DE9B45529B733); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		952548237D7F645F11D1E7B6 = { isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon"; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "AccentColor"; CODE_SIGN_STYLE = "Automatic"; CURRENT_PROJECT_VERSION = "1"; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = "NO"; INFOPLIST_FILE = "App/Info.plist"; MARKETING_VERSION = "1.0.0"; PRODUCT_BUNDLE_IDENTIFIER = "org.callsignal.app"; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = "NO"; SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = "NO"; TARGETED_DEVICE_FAMILY = "1"; ENABLE_PREVIEWS = "YES"; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks"; SWIFT_OPTIMIZATION_LEVEL = "-Onone"; DEBUG_INFORMATION_FORMAT = "dwarf"; ENABLE_TESTABILITY = "YES"; SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG"; ONLY_ACTIVE_ARCH = "YES"; }; name = Debug; };
+		E2D3A31BEAA1368FC62DA77A = { isa = XCBuildConfiguration; buildSettings = { ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon"; ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = "AccentColor"; CODE_SIGN_STYLE = "Automatic"; CURRENT_PROJECT_VERSION = "1"; DEVELOPMENT_TEAM = ""; GENERATE_INFOPLIST_FILE = "NO"; INFOPLIST_FILE = "App/Info.plist"; MARKETING_VERSION = "1.0.0"; PRODUCT_BUNDLE_IDENTIFIER = "org.callsignal.app"; PRODUCT_NAME = "$(TARGET_NAME)"; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = "NO"; SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = "NO"; TARGETED_DEVICE_FAMILY = "1"; ENABLE_PREVIEWS = "YES"; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks"; SWIFT_OPTIMIZATION_LEVEL = "-O"; SWIFT_COMPILATION_MODE = "wholemodule"; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; }; name = Release; };
+		82A58AF6F77EDCFC78A65DA6 = { isa = XCConfigurationList; buildConfigurations = (952548237D7F645F11D1E7B6, E2D3A31BEAA1368FC62DA77A); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		244210E48437B6556980A702 = { isa = PBXProject; attributes = { BuildIndependentTargetsInParallel = YES; LastUpgradeCheck = 1600; TargetAttributes = { 34A04005BCAF206EEC990BD9 = { CreatedOnToolsVersion = 16.0; }; }; }; buildConfigurationList = 7ED5184A5487DF185E3420D0; compatibilityVersion = "Xcode 14.0"; developmentRegion = en; hasScannedForEncodings = 0; knownRegions = (en, Base); mainGroup = 19F479106CE8C3BA8C106518; productRefGroup = 0A3E27B8CA818264D75C8D81; projectDirPath = ""; projectRoot = ""; targets = (34A04005BCAF206EEC990BD9); };
+	};
+	rootObject = 244210E48437B6556980A702;
+}
